@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#111111',
+        secondary: '#FFFFFF',
+        background: '#F7F7F5',
+        'dark-grey': '#292929',
+        'light-grey': '#E8E8E8',
+        accent: '#B89B72',
+        surface: '#f9f9f7',
+        'surface-dim': '#dadad8',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f4f4f2',
+        'surface-container': '#eeeeec',
+        'surface-container-high': '#e8e8e6',
+        'surface-container-highest': '#e2e3e1',
+        'on-surface': '#1a1c1b',
+        'on-surface-variant': '#444748',
+        outline: '#747878',
+        'outline-variant': '#c4c7c7',
+        'tertiary-fixed': '#ffddb0',
+        'tertiary-fixed-dim': '#e1c296',
+        'on-tertiary-container': '#9b8059',
+        'tertiary-container': '#281800',
+        'secondary-fixed': '#e2e2e2',
+        'secondary-fixed-dim': '#c6c6c7',
+      },
+      fontFamily: {
+        display: ['Syne', 'sans-serif'],
+        heading: ['Syne', 'sans-serif'],
+        body: ['"Plus Jakarta Sans"', 'sans-serif'],
+        label: ['"Space Grotesk"', 'sans-serif'],
+      },
+      borderRadius: {
+        DEFAULT: '0px',
+        none: '0px',
+        sm: '0px',
+        md: '0px',
+        lg: '0px',
+        xl: '0px',
+        '2xl': '0px',
+        '3xl': '0px',
+        full: '9999px',
+      },
+      boxShadow: {
+        brutal: '0px 4px 0px #111111',
+      },
+      letterSpacing: {
+        label: '0.1em',
+        'label-wide': '0.12em',
+      },
+    },
+  },
+  plugins: [],
+};

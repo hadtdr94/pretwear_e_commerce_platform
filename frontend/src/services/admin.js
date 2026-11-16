@@ -1,0 +1,28 @@
+import api from './api';
+
+export const adminApi = {
+  dashboard: () => api.get('/admin/dashboard').then((r) => r.data),
+  listOrders: (params = {}) => api.get('/orders', { params }).then((r) => r.data),
+  updateOrderStatus: (id, status) => api.patch(`/orders/${id}/status`, { status }).then((r) => r.data),
+  listCustomizations: (params = {}) => api.get('/customization', { params }).then((r) => r.data),
+  getCustomization: (id) => api.get(`/customization/${id}`).then((r) => r.data),
+  updateCustomizationStatus: (id, data) => api.patch(`/customization/${id}/status`, data).then((r) => r.data),
+  addQuote: (id, data) => api.post(`/customization/${id}/quotes`, data).then((r) => r.data),
+  listCustomers: (params = {}) => api.get('/customers', { params }).then((r) => r.data),
+  listCategories: (params = {}) => api.get('/categories', { params: { includeInactive: 'true', ...params } }).then((r) => r.data),
+  createCategory: (data) => api.post('/categories', data).then((r) => r.data),
+  updateCategory: (id, data) => api.put(`/categories/${id}`, data).then((r) => r.data),
+  deleteCategory: (id) => api.delete(`/categories/${id}`).then((r) => r.data),
+  listProducts: (params = {}) => api.get('/products', { params: { includeInactive: 'true', limit: 50, ...params } }).then((r) => r.data),
+  getProduct: (id) => api.get(`/products/${id}`).then((r) => r.data),
+  createProduct: (data) => api.post('/products', data).then((r) => r.data),
+  updateProduct: (id, data) => api.put(`/products/${id}`, data).then((r) => r.data),
+  deleteProduct: (id) => api.delete(`/products/${id}`).then((r) => r.data),
+  listSizes: () => api.get('/attributes/sizes').then((r) => r.data),
+  listColors: () => api.get('/attributes/colors').then((r) => r.data),
+  listDeliveryZones: () => api.get('/delivery-zones', { params: { includeInactive: 'true' } }).then((r) => r.data),
+  upsertDeliveryZone: (data) => api.post('/delivery-zones', data).then((r) => r.data),
+  deleteDeliveryZone: (id) => api.delete(`/delivery-zones/${id}`).then((r) => r.data),
+  getSettings: () => api.get('/settings').then((r) => r.data),
+  updateSettings: (data) => api.put('/settings', data).then((r) => r.data),
+};

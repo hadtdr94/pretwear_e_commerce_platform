@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "tertiary": "#000000", "error": "#ba1a1a", "surface-dim": "#dadad8", "surface-container-high": "#e8e8e6", "secondary": "#5d5f5f", "inverse-primary": "#c8c6c5", "surface-container-lowest": "#ffffff", "surface-container-low": "#f4f4f2", "surface-container": "#eeeeec", "on-primary": "#ffffff", "secondary-fixed": "#e2e2e2", "on-background": "#1a1c1b", "on-tertiary-container": "#9b8059", "on-tertiary-fixed-variant": "#594321", "on-secondary-fixed-variant": "#454747", "secondary-fixed-dim": "#c6c6c7", "on-surface": "#1a1c1b", "on-surface-variant": "#444748", "inverse-on-surface": "#f1f1ef", "primary-fixed": "#e5e2e1", "surface-container-highest": "#e2e3e1", "tertiary-fixed-dim": "#e1c296", "primary-container": "#1c1b1b", "on-primary-fixed": "#1c1b1b", "background": "#f9f9f7", "surface": "#f9f9f7", "on-secondary": "#ffffff", "tertiary-container": "#281800", "on-primary-container": "#858383", "secondary-container": "#dfe0e0", "on-error": "#ffffff", "on-primary-fixed-variant": "#474646", "on-tertiary-fixed": "#281800", "on-secondary-container": "#616363", "outline": "#747878", "tertiary-fixed": "#ffddb0", "surface-variant": "#e2e3e1", "surface-tint": "#5f5e5e", "on-error-container": "#93000a", "outline-variant": "#c4c7c7", "on-secondary-fixed": "#1a1c1c", "primary": "#000000", "on-tertiary": "#ffffff", "surface-bright": "#f9f9f7", "inverse-surface": "#2f3130" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "3.5rem", "space-xl": "3rem", "space-lg": "1.5rem", "gutter-desktop": "2.5rem", "margin": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "label-lg": [ "Space Grotesk" ], "headline-lg-mobile": [ "Syne" ], "display-mobile": [ "Syne" ], "label-md": [ "Space Grotesk" ], "display": [ "Syne" ], "price-display": [ "Space Grotesk" ], "headline-lg": [ "Syne" ], "body-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Syne" ], "headline-sm": [ "Syne" ] }, "fontSize": { "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg-mobile": [ "2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-mobile": [ "2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" } ], "display": [ "4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "price-display": [ "1.5rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "500" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "headline-md": [ "2rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "700" } ], "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-tertiary-fixed selection:text-tertiary"><div class="fixed top-0 left-0 w-full z-50"><aside class="w-full bg-primary text-on-primary border-b border-surface-container-high/10 overflow-hidden"><div class="w-full px-margin-desktop h-9 flex items-center justify-between text-label-sm font-label-sm uppercase tracking-widest"><div class="flex items-center gap-space-md overflow-hidden whitespace-nowrap"><span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span><span>LIVRAISON 58 WILAYAS</span><span class="text-outline">•</span><span>NOUVELLE COLLECTION SS25 DISPONIBLE</span><span class="text-outline">•</span><span class="text-tertiary-fixed-dim">PERSONNALISATION DTF &amp; BRODERIE SUR MESURE</span><span class="text-outline">•</span><span>COMMANDES EN GROS &amp; B2B</span></div><div class="hidden lg:flex items-center gap-space-lg text-secondary-fixed-dim"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">local_shipping</span><span>PAIEMENT À LA LIVRAISON (COD)</span></span><span class="text-outline">|</span><span>BORDJ EL KIFFAN, ALGER</span></div></div></aside><header class="w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="PRETWEAR Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA0mDhFo2ej4txSK3MTbe-BjMFimI3XdOEnFfvKjEwzx-j1GKvzUBdyO5AdStGFXnU0t_pvZoWfoeWt3Ifpl0faRPDwEdAIFZrGxsmri97_bMnips8e5QxiOYo8etGsMf7lbRzFmsrzopoShKIGNuWUkuBDBwpFmJgMTK5T5O-3K2zWQiYKKzVst3FU3XwOPGCzj5pJuGCzTRUF1YS6NIG-XXNs74KXoSvHlBvqXQ"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary font-bold leading-none">PRETWEAR</span><span class="font-label-sm text-label-sm tracking-[0.2em] text-secondary text-[9px] uppercase leading-tight">Atelier &amp; Streetwear Algiers</span></a></div><nav class="hidden xl:flex items-center gap-space-lg h-full" data-active-classes="text-primary font-bold relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-primary"><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="uppercase py-2 transition-colors text-primary font-bold relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-primary" data-path="shop" href="#">Shop</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="collections" href="#">Collections</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors flex items-center gap-space-xs" data-path="customization" href="#"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>Customization</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="b2b-pro" href="#">B2B &amp; Pro</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="about" href="#">About</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center px-space-sm py-1 bg-surface-container-low text-primary font-label-sm text-label-sm uppercase tracking-wider rounded"><span class="text-tertiary font-bold">DZD</span><span class="mx-1 text-outline-variant">/</span><span class="text-secondary">DA</span></div><button aria-label="Search catalog" class="w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="View wishlist" class="relative w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span></a><button aria-label="Open shopping bag" class="relative w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-[10px] leading-none flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-xs pl-space-xs"><a class="flex items-center gap-space-xs p-1 hover:bg-surface-container rounded transition-colors" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFs1rGiXB2UP7nzuTHSaHEpDp2JV-wVjUhhYX4P2d4P4nigsB_Muqx9PPmp_nn_gjXgz_D8yl74fTagzfL9jQXz9FpFYwBHBBNiGiM_YiU-iZGY_BNqIJ93MpbKV0RljeozaASmkXqWQcjaM4BxuwMIs4259w_9K-UZ5ZkPHzzcrdU3rmNksAOSc9DbsJNfTHP8fxR_5aXPz2E1TAr5o6zuEUs4zgCgGdXFFiNOA"/><span class="material-symbols-outlined text-[18px] text-on-surface-variant hidden md:block">expand_more</span></a></div></div></div></header></div><main class="w-full pt-[116px] bg-surface min-h-[calc(100vh-116px)]"><div class="flex flex-col w-full">
+<!-- Atelier Breadcrumb & Status Bar -->
+<div class="w-full bg-surface-container-low px-4 sm:px-8 lg:px-margin-desktop py-3">
+<div class="max-w-[1400px] mx-auto flex flex-wrap items-center justify-between gap-3 text-label-sm font-label-sm uppercase tracking-wider text-secondary">
+<div class="flex items-center gap-2">
+<a class="hover:text-primary transition-colors" href="#">Atelier</a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="#">Streetwear Core</a>
+<span>/</span>
+<span class="text-primary font-bold">PTW-TS-280-BLK</span>
+</div>
+<div class="flex items-center gap-4 text-xs font-label-md">
+<span class="inline-flex items-center gap-1.5 text-primary">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Confection Locale Alger
+        </span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="hidden md:inline">Expédition sous 24H</span>
+</div>
+</div>
+</div>
+<!-- Main Product Stage (Asymmetrical 12-Column Grid) -->
+<section class="w-full px-4 sm:px-8 lg:px-margin-desktop py-8 lg:py-12">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-gutter-desktop items-start">
+<!-- Gallery Column (7 Cols on Desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<!-- Main Stage Visual -->
+<div class="relative w-full aspect-[3/4] bg-surface-container-lowest overflow-hidden shadow-sm flex items-center justify-center group">
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest px-3 py-1">280 GSM Peigné</span>
+<span class="bg-tertiary-fixed text-tertiary font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 font-bold">Édition Limitée</span>
+</div>
+<!-- Main Product Presentation -->
+<img alt="T-Shirt Oversized Atelier Core 280 GSM" class="w-full h-full object-contain p-6 md:p-12 transition-transform duration-500 group-hover:scale-105" data-alt="Front studio shot of a premium heavyweight black oversized streetwear t-shirt crafted from 280 GSM luxury combed cotton, minimalist geometric typography on chest, clean architectural warm neutral studio lighting, sharp garment structure with dropped shoulders" id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_nqdczTZzmppjYbSqZJiLXykKlVYH2Z4wQHcJkNW6OraOxG8obVG2TW9_k5WjPHd7_oxAMgGcHH-HIsVtnPIW_K5s-UVY7GJcpb-bgD_g2aqgzJXD74iIzPbwxsCkgMqi5T4HOuwiNGQpA9vD0Ai0wqPoCrOErsK2OKnk9SDhdfjuep3dUyCmpqmPLx42olakAH0XBRoaspU6-UOnMWibHp-xcjEUhBjdxlNQQ"/>
+<button aria-label="Agrandir le visuel" class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur text-primary p-3 shadow-md hover:bg-primary hover:text-on-primary transition-colors" onclick="openZoom()" type="button">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+</div>
+<!-- Thumbnail Strip & Detail Zoom Cards -->
+<div class="grid grid-cols-4 gap-3">
+<button class="gallery-thumb aspect-square bg-surface-container-lowest p-2 focus:outline-none transition-all shadow-sm ring-2 ring-primary" onclick="setGallery(0)" type="button">
+<img alt="Vue avant" class="w-full h-full object-contain" data-alt="Front studio flat shot of heavyweight black oversized streetwear t-shirt on a warm stone gray backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0OxvMc_26l0Y7NfmCpHBvcql18-NhdPNi8HLIVT3ngvgQbJQDZv5gpsoPwPBOklTrwSljZcOAPbHcQkE6rYI6nflBbeL_x9k3W2JSg-8DReMLGYYjVSIj-qptD_3yFXPBMSXW_bkHup6ujsFdnxDgmmWuvBqLPtn8fpLik9wYFghqbJVjHslH4bTmhCNWuflZkDEO5Ii0WNTyJ83Zao-KQ7f6M2t-_CKb8dkbTw"/>
+</button>
+<button class="gallery-thumb aspect-square bg-surface-container-lowest p-2 focus:outline-none transition-all shadow-sm opacity-70 hover:opacity-100" onclick="setGallery(1)" type="button">
+<img alt="Vue arrière" class="w-full h-full object-contain" data-alt="Back aesthetic view of a black oversized 280 GSM luxury t-shirt showing deep dropped shoulder construction and seamless hem stitching, warm gallery background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBglsZRgVZWWrci0eY65u7iSE3FWSvyyiBPVhbys7m0O1dlWN72Yd6K7zORfZ9b8hbo5KHjN_YkbH7v2DcOzwLr7wAKDcjJ4mahbUT7AZQoDf6xqV3FfyDy1BH6i7f_ksZJCgZHvJ_zFOkVBrZPpGe671Q3QjIezduAkJTxsJjqEe99obXsaJacOt7MlJL3Gwh0QHmy5RjncB2uxGjU-QUra923Om-_dth9eDR8Zw"/>
+</button>
+<button class="gallery-thumb aspect-square bg-surface-container-lowest p-2 focus:outline-none transition-all shadow-sm opacity-70 hover:opacity-100" onclick="setGallery(2)" type="button">
+<img alt="Détail matière" class="w-full h-full object-cover" data-alt="Ultra macro texture shot of 100 percent dense 280 GSM combed cotton weave and reinforced thick 2.5cm ribbed collar stitching under studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKlzlXo9cDdMdanKA-ibSUGKtqx0WPm3Q0FIyTIpq-HY1LZn0QsPnmhMkg-G8KxguZABkHrveINOq5cMErnN_tqhvsEQajAByIMEWsO4Yd8eLP4CDz3m7eyomS_SGWy18xMBRuO3f7U2f7TZrGWM5HU1evQt07udoTQglfITnbJPwGhNr13HP-onYE76FIWoCwFPn16StRw5Rr4_UOGe-8RMK7GWAw4VgCI85DfA"/>
+</button>
+<button class="gallery-thumb aspect-square bg-surface-container-lowest p-2 focus:outline-none transition-all shadow-sm opacity-70 hover:opacity-100" onclick="setGallery(3)" type="button">
+<img alt="Porté Lookbook" class="w-full h-full object-cover" data-alt="Editorial lookbook photograph of a male model wearing the black oversized t-shirt against brutalist concrete architecture in Algiers, relaxed boxy fit drape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIuvd1lxf6TXOXohkxyv5kMlebegCG5huugRHYLgDGZRRBgdUv9l0o5edup4mNMRXaGckxuY1uqmvvY3rYDpMqWdD2-Tyu-gBjgwwfS86cLuiBcAL47u3lEDsA86WwYURSOcNtV0825jktQSxO3A2QFL-cGhizfz_4-mO3EzuL-V4BAMOxVtnufzynk5iOK6WxgAIUelE7ZBxvz1g_QndfS2a9bYfvybvLJegvgA"/>
+</button>
+</div>
+<!-- Garment Craftsmanship Specs Badge Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
+<div class="bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Grammage</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">280 GSM</span>
+<span class="text-xs text-on-surface-variant font-body-sm">Poids lourd &amp; tenue rigide</span>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Composition</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100% Coton</span>
+<span class="text-xs text-on-surface-variant font-body-sm">Fils peignés longs</span>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Collet</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">2.5 CM</span>
+<span class="text-xs text-on-surface-variant font-body-sm">Côtelé anti-déformation</span>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Confection</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Boxy Fit</span>
+<span class="text-xs text-on-surface-variant font-body-sm">Épaules tombantes SS25</span>
+</div>
+</div>
+</div>
+<!-- Specs & Action Column (5 Cols on Desktop - Sticky) -->
+<div class="lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-28">
+<!-- Header Info -->
+<div class="bg-surface-container-lowest p-6 sm:p-8 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase tracking-widest">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+              En Stock • Atelier Bordj El Kiffan
+            </span>
+<span>RÉF: PTW-TS-280-BLK</span>
+</div>
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg text-primary uppercase font-extrabold tracking-tight">T-Shirt Oversized ‘Atelier Core’</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Conception architecturale boxy fit en pur coton peigné 280 GSM. Développé et coupé sur mesure dans nos ateliers à Alger.</p>
+</div>
+<div class="flex items-baseline justify-between pt-2">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">3 800</span>
+<span class="font-price-display text-price-display text-primary">DZD</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">TTC</span>
+</div>
+<div class="flex items-center gap-1 text-xs font-label-md uppercase tracking-wider bg-surface-container px-2 py-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">verified</span>
+              Paiement à la réception
+            </div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high my-1"></div>
+<!-- Color Selector -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Couleur</span>
+<span class="font-body-sm text-body-sm text-secondary" id="selected-color-label">Onyx Black (Sélectionné)</span>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="Noir Onyx" class="color-btn relative w-10 h-10 bg-primary ring-2 ring-offset-2 ring-primary transition-all focus:outline-none flex items-center justify-center" onclick="selectColor('Onyx Black', this)" type="button">
+<span class="material-symbols-outlined text-on-primary text-[14px]">check</span>
+</button>
+<button aria-label="Écru Naturel" class="color-btn relative w-10 h-10 bg-[#E6E1D8] transition-all hover:ring-2 hover:ring-offset-2 hover:ring-primary focus:outline-none flex items-center justify-center" onclick="selectColor('Ecru Raw Cotton', this)" type="button">
+<span class="material-symbols-outlined text-primary text-[14px] hidden">check</span>
+</button>
+<button aria-label="Olive Délaver" class="color-btn relative w-10 h-10 bg-[#4D5343] transition-all hover:ring-2 hover:ring-offset-2 hover:ring-primary focus:outline-none flex items-center justify-center" onclick="selectColor('Washed Olive', this)" type="button">
+<span class="material-symbols-outlined text-on-primary text-[14px] hidden">check</span>
+</button>
+</div>
+</div>
+<!-- Size Selector & Stock State -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Sélectionner la Taille</span>
+<button class="font-label-sm text-label-sm uppercase tracking-wider text-primary underline hover:text-tertiary-fixed-dim transition-colors flex items-center gap-1" onclick="toggleSizeModal(true)" type="button">
+<span class="material-symbols-outlined text-[16px]">straighten</span> Guide des Tailles (CM)
+              </button>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<button class="size-chip p-2.5 flex flex-col items-center justify-center bg-surface-container hover:bg-surface-container-high transition-colors focus:outline-none text-center" onclick="selectSize('S', '3 en stock', this)" type="button">
+<span class="font-label-md text-label-md text-primary font-bold">S</span>
+<span class="font-label-sm text-[10px] text-secondary">3 restants</span>
+</button>
+<button class="size-chip p-2.5 flex flex-col items-center justify-center bg-primary text-on-primary transition-colors focus:outline-none text-center" onclick="selectSize('M', '12 en stock', this)" type="button">
+<span class="font-label-md text-label-md font-bold">M</span>
+<span class="font-label-sm text-[10px] text-secondary-fixed-dim">12 en stock</span>
+</button>
+<button class="size-chip p-2.5 flex flex-col items-center justify-center bg-surface-container hover:bg-surface-container-high transition-colors focus:outline-none text-center" onclick="selectSize('L', '8 en stock', this)" type="button">
+<span class="font-label-md text-label-md text-primary font-bold">L</span>
+<span class="font-label-sm text-[10px] text-secondary">8 en stock</span>
+</button>
+<button class="size-chip p-2.5 flex flex-col items-center justify-center bg-surface-container hover:bg-surface-container-high transition-colors focus:outline-none text-center" onclick="selectSize('XL', '5 en stock', this)" type="button">
+<span class="font-label-md text-label-md text-primary font-bold">XL</span>
+<span class="font-label-sm text-[10px] text-secondary">5 en stock</span>
+</button>
+<button class="size-chip p-2.5 flex flex-col items-center justify-center bg-surface-container hover:bg-surface-container-high transition-colors focus:outline-none text-center" onclick="selectSize('XXL', 'Sur commande', this)" type="button">
+<span class="font-label-md text-label-md text-primary font-bold">XXL</span>
+<span class="font-label-sm text-[10px] text-secondary">Sur cmde</span>
+</button>
+</div>
+<p class="text-xs font-label-sm text-emerald-700 font-medium" id="size-stock-feedback">Taille M: 12 pièces disponibles immédiatement à l'atelier.</p>
+</div>
+<!-- Quantity Control -->
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Quantité</span>
+<div class="flex items-center bg-surface-container">
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors focus:outline-none" onclick="changeQty(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-md text-label-md font-bold text-primary" id="qty-display">1</span>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors focus:outline-none" onclick="changeQty(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Customization Atelier Toggle Feature -->
+<div class="bg-surface-container-low p-4 flex flex-col gap-3">
+<label class="flex items-start gap-3 cursor-pointer">
+<input class="mt-1 w-4 h-4 accent-primary rounded-none cursor-pointer" id="customization-toggle" onchange="toggleCustomizationUI()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                  Ajouter une personnalisation d'Atelier
+                </span>
+<span class="font-body-sm text-body-sm text-secondary">Broderie 3D ou flocage DTF Ultra-HD disponible à partir de 5 unités ou séries B2B.</span>
+</div>
+</label>
+<!-- Expanded Atelier mini-box -->
+<div class="hidden flex-col gap-2 pt-2 text-xs font-body-sm text-on-surface-variant bg-surface-container-lowest p-3" id="custom-details">
+<span class="font-label-sm uppercase font-bold text-primary">Options Disponibles:</span>
+<div class="grid grid-cols-2 gap-2 text-label-sm">
+<span class="p-1.5 bg-surface-container text-primary font-medium">• Broderie Fil Or / Argent</span>
+<span class="p-1.5 bg-surface-container text-primary font-medium">• DTF Quadrichromie Haute Définition</span>
+</div>
+<p class="pt-1 text-[11px] text-secondary">Notre équipe atelier vous contactera via WhatsApp dès validation de la commande pour recevoir vos fichiers vectoriels.</p>
+</div>
+</div>
+<!-- Direct CTAs -->
+<div class="flex flex-col gap-3 pt-2">
+<button class="w-full bg-primary hover:bg-tertiary-fixed hover:text-tertiary text-on-primary font-label-lg text-label-lg uppercase tracking-widest py-4 px-6 font-bold flex items-center justify-center gap-2 transition-all shadow-md" onclick="scrollToCheckout()" type="button">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+              COMMANDER EN CASH ON DELIVERY (COD)
+            </button>
+<button class="w-full bg-surface-container-lowest hover:bg-surface-container text-primary font-label-lg text-label-lg uppercase tracking-wider py-3.5 px-6 font-semibold flex items-center justify-center gap-2 transition-colors" onclick="addToCartMock()" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+              Ajouter au Panier
+            </button>
+</div>
+<!-- Reassurance Badges -->
+<div class="grid grid-cols-2 gap-3 pt-2 text-xs font-label-sm uppercase tracking-wider text-secondary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+              Inspection à la remise
+            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">swap_horiz</span>
+              Échange sous 72H
+            </div>
+</div>
+</div>
+<!-- Logistics & Atelier Accordion -->
+<div class="flex flex-col gap-2">
+<details class="bg-surface-container-lowest p-5 shadow-sm group" open="">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md uppercase tracking-wider text-primary font-bold list-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+                Livraison 58 Wilayas &amp; Tarifs COD
+              </span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-4 flex flex-col gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<p>Partenaires officiels: <strong>Yalidine Express &amp; Procolis</strong>.</p>
+<div class="grid grid-cols-2 gap-2 my-2 text-xs font-label-sm">
+<div class="bg-surface-container p-2.5">
+<span class="text-primary font-bold block">Alger &amp; Environs</span>
+<span>400 DZD • 24h ouvrées</span>
+</div>
+<div class="bg-surface-container p-2.5">
+<span class="text-primary font-bold block">Grandes Villes (Oran, Constantine...)</span>
+<span>600 DZD • 24h - 48h</span>
+</div>
+<div class="bg-surface-container p-2.5">
+<span class="text-primary font-bold block">Wilayas Intérieures</span>
+<span>750 DZD • 48h - 72h</span>
+</div>
+<div class="bg-surface-container p-2.5">
+<span class="text-primary font-bold block">Grand Sud</span>
+<span>900 DZD • 3 à 5 jours</span>
+</div>
+</div>
+<p class="text-xs text-secondary">Règlement en espèces directement auprès du livreur après vérification visuelle de votre paquet.</p>
+</div>
+</details>
+<details class="bg-surface-container-lowest p-5 shadow-sm group">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md uppercase tracking-wider text-primary font-bold list-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">dry_cleaning</span>
+                Entretien &amp; Conseils Atelier
+              </span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-4 text-body-sm font-body-sm text-on-surface-variant flex flex-col gap-1.5">
+<p>• Lavage délicat sur l'envers à 30°C max en machine.</p>
+<p>• Ne pas sécher au sèche-linge rotatif (préserve le grammage 280 GSM).</p>
+<p>• Repassage doux sur l'envers sans toucher directement les impressions DTF.</p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Instant Direct Checkout Flow Section (COD Algerian Express Form) -->
+<section class="w-full bg-surface-container-low py-12 lg:py-16" id="instant-checkout-section">
+<div class="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-margin-desktop">
+<div class="flex flex-col gap-2 mb-8 text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-tertiary-fixed-dim font-bold">Processus Simplifié Algérie</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase font-bold tracking-tight">Validation Express Sans Carte Bancaire</h2>
+<p class="font-body-md text-body-md text-secondary">Remplissez vos coordonnées ci-dessous pour lancer l'expédition immédiate avec paiement à la livraison (Cash On Delivery).</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Order Summary Receipt Panel (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-6 sm:p-8 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3">
+<span class="font-headline-sm text-headline-sm uppercase text-primary font-bold">Récapitulatif</span>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container px-2.5 py-1 text-primary">1 Article</span>
+</div>
+<div class="flex gap-4 items-center">
+<div class="w-20 h-24 bg-surface-container shrink-0 flex items-center justify-center p-2">
+<img alt="Aperçu article" class="w-full h-full object-contain" data-alt="Thumbnail view of black oversized heavy cotton t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9h2WIi9EO9C1shfPrk3t8yu8KIYHudO9RkUzzlCY-j59zUqcwu4YOUv6aiN8_PVrAl71pBXXW73MDoPEc8wEjk_ZQTBFP2OrOoKfOoMOIIic6rAOK6QY9Z6EJpfA-_3N-M0i95h8tZI41GyB8vqrFIztGxKNc3wuoBl0zp2Qh7afu_pi9lSETHCSmJJXtX0VLdrZeuinfxXn0vYrE4g77jJjWbs4Bj9r3Bw0Qrw"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md font-bold text-primary uppercase">T-Shirt Oversized ‘Atelier Core’</span>
+<span class="text-xs text-secondary font-body-sm">Couleur: <span id="summary-color">Onyx Black</span> • Taille: <span id="summary-size">M</span></span>
+<span class="text-xs text-secondary font-body-sm">Quantité: <span id="summary-qty">1</span></span>
+<span class="font-label-md text-label-md font-bold text-primary pt-1">3 800 DZD</span>
+</div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high"></div>
+<!-- Cost Calculations -->
+<div class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span>Sous-total articles:</span>
+<span class="font-label-md font-semibold text-primary" id="subtotal-display">3 800 DZD</span>
+</div>
+<div class="flex justify-between">
+<span>Frais de port estimés:</span>
+<span class="font-label-md font-semibold text-primary" id="shipping-display">400 DZD</span>
+</div>
+<div class="flex justify-between text-xs text-secondary">
+<span>Tarif ajusté selon Wilaya:</span>
+<span id="wilaya-status-name">Alger (Centre)</span>
+</div>
+</div>
+<div class="h-[1px] w-full bg-surface-container-high"></div>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase font-bold text-primary">Total Net à Payer</span>
+<span class="text-xs text-secondary">À régler au livreur en main propre</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-extrabold text-primary" id="total-display">4 200</span>
+<span class="font-price-display text-price-display font-bold text-primary"> DZD</span>
+</div>
+</div>
+<div class="bg-surface-container p-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">info</span>
+<p class="text-xs font-body-sm text-on-surface-variant leading-relaxed">
+              Un agent de l'Atelier PRETWEAR vous appellera sur votre portable dans les 2 heures pour confirmer votre taille exacte et l'adresse avant le départ du colis.
+            </p>
+</div>
+</div>
+<!-- Form Panel (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-6 sm:p-8 shadow-sm">
+<form class="flex flex-col gap-5" id="cod-order-form" onsubmit="handleOrderSubmit(event)">
+<div class="flex items-center gap-2 pb-2">
+<span class="w-2 h-2 bg-primary"></span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Coordonnées de Livraison</h3>
+</div>
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold" for="cust-fullname">
+                Nom &amp; Prénom <span class="text-error">*</span>
+</label>
+<input class="w-full bg-surface-container px-4 py-3 text-body-md font-body-md text-primary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all" id="cust-fullname" placeholder="Ex: Karim Benali" required="" type="text"/>
+</div>
+<!-- Phone Number (05/06/07 Algerian Mobile) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold" for="cust-phone">
+                Numéro de Téléphone Mobile <span class="text-error">*</span>
+</label>
+<div class="flex">
+<span class="bg-surface-container-high px-3.5 py-3 text-label-md font-label-md text-primary font-bold flex items-center justify-center shrink-0">
+                  +213
+                </span>
+<input class="w-full bg-surface-container px-4 py-3 text-body-md font-body-md text-primary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all" id="cust-phone" pattern="^(05|06|07)[0-9]{8}$" placeholder="0550 12 34 56" required="" type="tel"/>
+</div>
+<span class="text-[11px] text-secondary font-label-sm">Indispensable pour la confirmation d'appel du transporteur (05, 06 ou 07).</span>
+</div>
+<!-- Wilaya & Commune Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold" for="cust-wilaya">
+                  Wilaya (58 Wilayas) <span class="text-error">*</span>
+</label>
+<select class="w-full bg-surface-container px-4 py-3 text-body-md font-body-md text-primary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none cursor-pointer" id="cust-wilaya" onchange="updateWilayaFee(this.value)" required="">
+<option selected="" value="16">16 - Alger (400 DZD)</option>
+<option value="09">09 - Blida (500 DZD)</option>
+<option value="35">35 - Boumerdès (500 DZD)</option>
+<option value="42">42 - Tipaza (500 DZD)</option>
+<option value="31">31 - Oran (600 DZD)</option>
+<option value="25">25 - Constantine (600 DZD)</option>
+<option value="19">19 - Sétif (600 DZD)</option>
+<option value="15">15 - Tizi Ouzou (600 DZD)</option>
+<option value="06">06 - Béjaïa (600 DZD)</option>
+<option value="13">13 - Tlemcen (650 DZD)</option>
+<option value="23">23 - Annaba (650 DZD)</option>
+<option value="05">05 - Batna (650 DZD)</option>
+<option value="17">17 - Djelfa (700 DZD)</option>
+<option value="30">30 - Ouargla (800 DZD)</option>
+<option value="47">47 - Ghardaïa (800 DZD)</option>
+<option value="11">11 - Tamanrasset (950 DZD)</option>
+<option value="39">39 - El Oued (850 DZD)</option>
+<option value="other">Autres Wilayas (650 - 900 DZD)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold" for="cust-commune">
+                  Commune / Ville <span class="text-error">*</span>
+</label>
+<input class="w-full bg-surface-container px-4 py-3 text-body-md font-body-md text-primary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all" id="cust-commune" placeholder="Ex: Bordj El Kiffan, Hydra..." required="" type="text"/>
+</div>
+</div>
+<!-- Detailed Address -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold" for="cust-address">
+                Adresse Précise de Livraison <span class="text-error">*</span>
+</label>
+<textarea class="w-full bg-surface-container px-4 py-3 text-body-md font-body-md text-primary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all resize-none" id="cust-address" placeholder="N° de rue, bâtiment, quartier ou point de repère..." required="" rows="2"></textarea>
+</div>
+<!-- Notes or Customization Requests -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold" for="cust-notes">
+                Instructions ou Remarques Spéciales (Optionnel)
+              </label>
+<input class="w-full bg-surface-container px-4 py-2.5 text-body-sm font-body-sm text-primary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all" id="cust-notes" placeholder="Ex: Livraison après 16h, ou détails personnalisation..." type="text"/>
+</div>
+<!-- Payment Badge Selected -->
+<div class="p-4 bg-primary text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-tertiary-fixed">payments</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase font-bold tracking-wider">Paiement Main à Main (COD)</span>
+<span class="text-xs text-secondary-fixed-dim">Vous ne payez rien maintenant. Remise du montant au transporteur.</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+</div>
+<!-- Submit Action -->
+<button class="w-full bg-tertiary-fixed hover:bg-on-primary hover:text-primary text-tertiary font-label-lg text-label-lg uppercase tracking-widest py-4 px-6 font-bold flex items-center justify-center gap-2 transition-all shadow-md" id="submit-order-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+              CONFIRMER MA COMMANDE • <span id="btn-total-val">4 200 DZD</span>
+</button>
+<div class="hidden p-4 bg-emerald-100 text-emerald-900 text-sm font-medium" id="order-success-msg">
+<div class="flex items-center gap-2 font-bold mb-1">
+<span class="material-symbols-outlined">check_circle</span>
+                Commande Enregistrée avec Succès !
+              </div>
+<p>Merci ! Votre commande n° PTW-9481 a été transmise à notre atelier. Nous vous appellerons sous peu pour valider l'expédition.</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete The Atelier Look (Complementary Products) -->
+<section class="w-full px-4 sm:px-8 lg:px-margin-desktop py-12 lg:py-16">
+<div class="max-w-[1400px] mx-auto flex flex-col gap-8">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Complétez le Vestiaire</span>
+<h2 class="font-headline-md text-headline-md uppercase font-bold tracking-tight text-primary">Pièces Assorties • Collection Atelier</h2>
+</div>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1 hover:text-tertiary-fixed-dim transition-colors" href="#">
+          Explorer la Collection <span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Product 1: Cap using injected https://lh3.googleusercontent.com/aida-public/AB6AXuClkFPd13MvYiic5ZZoHywJzLchqwgXdeMr9_vHQlGlseXAHhFpkp32z_c1kJDBs0H9BQTy2QMCj9BjNM-9MDbt1P1YwTOhEtpcojcsjKyRu8hUi-yQpKxnCBMMVQhXFj5B0CTLgryXh0-wTM5luRs3_fKNoCpY1PlPpR-D781j0SICKgr1dPSW5-H-ZkkwXBPmjSNZfixZRqvkzlZJgFfdFL9vv2k3y6ZIvoRURA -->
+<div class="bg-surface-container-lowest p-4 flex flex-col gap-4 shadow-sm group">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-3 left-3 bg-primary text-on-primary text-label-sm font-label-sm uppercase px-2 py-0.5 z-10 font-bold">Broderie 3D</span>
+<img alt="Casquette Structurée Coton Washed Olive Broderie 3D" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClkFPd13MvYiic5ZZoHywJzLchqwgXdeMr9_vHQlGlseXAHhFpkp32z_c1kJDBs0H9BQTy2QMCj9BjNM-9MDbt1P1YwTOhEtpcojcsjKyRu8hUi-yQpKxnCBMMVQhXFj5B0CTLgryXh0-wTM5luRs3_fKNoCpY1PlPpR-D781j0SICKgr1dPSW5-H-ZkkwXBPmjSNZfixZRqvkzlZJgFfdFL9vv2k3y6ZIvoRURA"/>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-md text-label-md uppercase font-bold text-primary">Casquette Structurée 'Atelier' Olive</h3>
+<span class="font-price-display text-price-display font-bold text-primary">2 400 <span class="text-xs">DZD</span></span>
+</div>
+<p class="text-xs text-secondary font-body-sm line-clamp-1">Coton lourd délavé, broderie haute densité relief, sangle arrière en cuir et boucle laiton.</p>
+<button class="w-full mt-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm uppercase tracking-wider py-2.5 transition-colors font-bold" type="button">
+              Ajouter au panier rapide
+            </button>
+</div>
+</div>
+<!-- Product 2: Heavyweight Hoodie -->
+<div class="bg-surface-container-lowest p-4 flex flex-col gap-4 shadow-sm group">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-3 left-3 bg-tertiary-fixed text-tertiary text-label-sm font-label-sm uppercase px-2 py-0.5 z-10 font-bold">420 GSM Ultra Heavy</span>
+<img alt="Hoodie Heavyweight 420 GSM" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-end streetwear hoodie in washed charcoal gray, dense French Terry 420 GSM fabric, boxy drop shoulder silhouette on minimalist neutral set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFz5qAmnYbnApuXjRhUaaCEQDeThJ39NkXj8KAEbYu8uorPmtDLunJYnyl4Q1MPltre4NKRGiX8rBuslYbPZB44bMf6R9ThHCTr2F_-qgRNPhnPKtlE_Wikz-v8IWAEDl4Q9pMEMShQTPNJvKDo7_JOj_vyJcnRlX9n7Rz1scWgZTaT7SZMKRMN-pl6HxvJv4Qo9aEBL5PFklA3rS3-MHXLuJNiF0ljaQpx6kEzA"/>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-md text-label-md uppercase font-bold text-primary">Hoodie Boxy 'Archival' 420 GSM</h3>
+<span class="font-price-display text-price-display font-bold text-primary">6 800 <span class="text-xs">DZD</span></span>
+</div>
+<p class="text-xs text-secondary font-body-sm line-clamp-1">French Terry ultra-lourd sans cordon, capuche double épaisseur structurée.</p>
+<button class="w-full mt-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm uppercase tracking-wider py-2.5 transition-colors font-bold" type="button">
+              Ajouter au panier rapide
+            </button>
+</div>
+</div>
+<!-- Product 3: Heavyweight Cargo Pant -->
+<div class="bg-surface-container-lowest p-4 flex flex-col gap-4 shadow-sm group sm:col-span-2 lg:col-span-1">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<span class="absolute top-3 left-3 bg-surface-container-lowest text-primary text-label-sm font-label-sm uppercase px-2 py-0.5 z-10 font-bold">Ripstop Tech</span>
+<img alt="Pantalon Cargo Atelier" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Architectural wide-leg cargo pants in deep black heavyweight cotton ripstop with modular strap detailing and utility pockets studio setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjnH21EEa8ngoG0V2zey83Ia_n6dbFrj297ZKY_Kc6XYrV1Vf4yMzdJ5FXnc8zCIEmr5tktuV2_e_sdRuvdMr2m-M7XgtWDdhYUgB9POaH_rBvWNT52GoxjUBuaeoJLrxuXUE26a5rUtRolxY5W-bNOkDpJPKYq5_HMxruUZnNdJ-vNAr6SJz3dRJdQStOBcmps7apNJY4-T0pRT3Dc1lfM4T9SQO9z-NwRYIjgA"/>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-md text-label-md uppercase font-bold text-primary">Pantalon Cargo Tailoré 'Tactical'</h3>
+<span class="font-price-display text-price-display font-bold text-primary">7 400 <span class="text-xs">DZD</span></span>
+</div>
+<p class="text-xs text-secondary font-body-sm line-clamp-1">Toile ripstop résistante, poches volumétriques à soufflet, ourlet ajustable par cordon.</p>
+<button class="w-full mt-2 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm uppercase tracking-wider py-2.5 transition-colors font-bold" type="button">
+              Ajouter au panier rapide
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Size Guide Modal Structure -->
+<div class="fixed inset-0 z-[60] bg-primary/80 backdrop-blur-sm hidden items-center justify-center p-4" id="size-guide-modal">
+<div class="bg-surface-container-lowest w-full max-w-2xl p-6 sm:p-8 shadow-xl relative max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between pb-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Guide des Tailles Spécifique</span>
+<span class="text-xs font-label-sm text-secondary uppercase">Mesures en centimètres (CM) à plat</span>
+</div>
+<button aria-label="Fermer le guide" class="p-1 hover:bg-surface-container transition-colors" onclick="toggleSizeModal(false)" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="py-4">
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+          Notre coupe est résolument <strong>oversized &amp; boxy</strong> avec des épaules tombantes prononcées. Pour un rendu streetwear standard, prenez votre taille habituelle. Pour un fit ajusté, prenez une taille en dessous.
+        </p>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container font-label-md text-label-md uppercase text-primary">
+<th class="p-3">Taille</th>
+<th class="p-3">Poitrine (A)</th>
+<th class="p-3">Longueur (B)</th>
+<th class="p-3">Épaule Tombante (C)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-on-surface">
+<tr>
+<td class="p-3 font-bold font-label-md">S</td>
+<td class="p-3">56 cm</td>
+<td class="p-3">71 cm</td>
+<td class="p-3">54 cm</td>
+</tr>
+<tr class="bg-surface-container-low font-semibold">
+<td class="p-3 font-bold font-label-md text-primary">M (Recommandé)</td>
+<td class="p-3">59 cm</td>
+<td class="p-3">74 cm</td>
+<td class="p-3">57 cm</td>
+</tr>
+<tr>
+<td class="p-3 font-bold font-label-md">L</td>
+<td class="p-3">62 cm</td>
+<td class="p-3">76 cm</td>
+<td class="p-3">60 cm</td>
+</tr>
+<tr>
+<td class="p-3 font-bold font-label-md">XL</td>
+<td class="p-3">65 cm</td>
+<td class="p-3">78 cm</td>
+<td class="p-3">63 cm</td>
+</tr>
+<tr>
+<td class="p-3 font-bold font-label-md">XXL</td>
+<td class="p-3">68 cm</td>
+<td class="p-3">80 cm</td>
+<td class="p-3">66 cm</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pt-4 flex justify-end">
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase px-6 py-2.5 font-bold hover:bg-tertiary-fixed hover:text-tertiary transition-colors" onclick="toggleSizeModal(false)" type="button">
+          Fermer et Choisir
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic Script -->
+<script>
+    let currentQty = 1;
+    const basePrice = 3800;
+    let shippingPrice = 400;
+
+    function selectColor(colorName, btn) {
+      document.getElementById('selected-color-label').textContent = colorName + ' (Sélectionné)';
+      document.getElementById('summary-color').textContent = colorName;
+      
+      document.querySelectorAll('.color-btn').forEach(b => {
+        b.classList.remove('ring-2', 'ring-offset-2', 'ring-primary');
+        const icon = b.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.add('hidden');
+      });
+
+      btn.classList.add('ring-2', 'ring-offset-2', 'ring-primary');
+      const activeIcon = btn.querySelector('.material-symbols-outlined');
+      if (activeIcon) activeIcon.classList.remove('hidden');
+    }
+
+    function selectSize(size, stockText, btn) {
+      document.querySelectorAll('.size-chip').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'hover:bg-surface-container-high');
+        const spanText = b.querySelector('.text-secondary-fixed-dim');
+        if (spanText) {
+          spanText.classList.remove('text-secondary-fixed-dim');
+          spanText.classList.add('text-secondary');
+        }
+      });
+
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container', 'hover:bg-surface-container-high');
+      
+      const subLabel = btn.querySelector('span:nth-child(2)');
+      if (subLabel) {
+        subLabel.classList.remove('text-secondary');
+        subLabel.classList.add('text-secondary-fixed-dim');
+      }
+
+      document.getElementById('summary-size').textContent = size;
+      const feedback = document.getElementById('size-stock-feedback');
+      feedback.textContent = `Taille ${size}: ${stockText} disponible immédiatement à l'atelier.`;
+    }
+
+    function changeQty(delta) {
+      currentQty = Math.max(1, Math.min(20, currentQty + delta));
+      document.getElementById('qty-display').textContent = currentQty;
+      document.getElementById('summary-qty').textContent = currentQty;
+      recalculateTotals();
+    }
+
+    function recalculateTotals() {
+      const subtotal = currentQty * basePrice;
+      const total = subtotal + shippingPrice;
+      
+      document.getElementById('subtotal-display').textContent = subtotal.toLocaleString('fr-FR') + ' DZD';
+      document.getElementById('total-display').textContent = total.toLocaleString('fr-FR');
+      document.getElementById('btn-total-val').textContent = total.toLocaleString('fr-FR') + ' DZD';
+    }
+
+    function updateWilayaFee(wilayaCode) {
+      const wilayaNameDisplay = document.getElementById('wilaya-status-name');
+      const shippingDisplay = document.getElementById('shipping-display');
+
+      if (wilayaCode === '16') {
+        shippingPrice = 400;
+        wilayaNameDisplay.textContent = '16 - Alger (400 DZD)';
+      } else if (['09', '35', '42'].includes(wilayaCode)) {
+        shippingPrice = 500;
+        wilayaNameDisplay.textContent = 'Proche banlieue Alger (500 DZD)';
+      } else if (['31', '25', '19', '15', '06'].includes(wilayaCode)) {
+        shippingPrice = 600;
+        wilayaNameDisplay.textContent = 'Grandes Villes (600 DZD)';
+      } else if (['13', '23', '05'].includes(wilayaCode)) {
+        shippingPrice = 650;
+        wilayaNameDisplay.textContent = 'Wilayas Intérieures (650 DZD)';
+      } else if (['17', '30', '47', '39'].includes(wilayaCode)) {
+        shippingPrice = 800;
+        wilayaNameDisplay.textContent = 'Portes du Sud (800 DZD)';
+      } else if (wilayaCode === '11') {
+        shippingPrice = 950;
+        wilayaNameDisplay.textContent = 'Grand Sud (950 DZD)';
+      } else {
+        shippingPrice = 700;
+        wilayaNameDisplay.textContent = 'Wilaya Expédition Standard (700 DZD)';
+      }
+
+      shippingDisplay.textContent = shippingPrice.toLocaleString('fr-FR') + ' DZD';
+      recalculateTotals();
+    }
+
+    function toggleCustomizationUI() {
+      const cb = document.getElementById('customization-toggle');
+      const box = document.getElementById('custom-details');
+      if (cb.checked) {
+        box.classList.remove('hidden');
+        box.classList.add('flex');
+      } else {
+        box.classList.add('hidden');
+        box.classList.remove('flex');
+      }
+    }
+
+    function scrollToCheckout() {
+      const checkoutEl = document.getElementById('instant-checkout-section');
+      checkoutEl.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('cust-fullname').focus();
+    }
+
+    function toggleSizeModal(show) {
+      const modal = document.getElementById('size-guide-modal');
+      if (show) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function handleOrderSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-order-btn');
+      btn.disabled = true;
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span> Traitement en cours...';
+
+      setTimeout(() => {
+        btn.classList.add('hidden');
+        const successMsg = document.getElementById('order-success-msg');
+        successMsg.classList.remove('hidden');
+      }, 900);
+    }
+
+    function addToCartMock() {
+      alert("Article 'T-Shirt Oversized Atelier Core' ajouté à votre panier. Vous pouvez finaliser via l'icône de sac en haut ou commander directement en Cash on Delivery ci-dessous.");
+    }
+
+    function setGallery(idx) {
+      const thumbs = document.querySelectorAll('.gallery-thumb');
+      thumbs.forEach((t, i) => {
+        if (i === idx) {
+          t.classList.remove('opacity-70');
+          t.classList.add('ring-2', 'ring-primary');
+        } else {
+          t.classList.add('opacity-70');
+          t.classList.remove('ring-2', 'ring-primary');
+        }
+      });
+    }
+
+    function openZoom() {
+      alert("Mode Loupe Haute Précision activé: Affichage des détails tissage 280 GSM et coutures renforcées.");
+    }
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary"><div class="w-full px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-xl border-b border-surface-container-high/15"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md uppercase tracking-tight text-on-primary font-bold">PRETWEAR</span><span class="px-2 py-0.5 bg-tertiary-container text-tertiary-fixed font-label-sm text-[10px] uppercase tracking-widest border border-tertiary-fixed/30">Haute Atelier</span></div><p class="font-body-md text-body-md text-secondary-fixed-dim max-w-sm">Wear it. Brand it. Make it yours. Contemporary street luxury meets avant-garde artisanal customization across all 58 Algerian wilayas.</p><div class="flex flex-col gap-1 text-body-sm font-body-sm text-secondary-fixed-dim"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">location_on</span>Bordj El Kiffan, Algiers, Algeria</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">schedule</span>Atelier: Samedi - Jeudi (09:00 - 19:00)</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">payments</span>Paiement à la livraison sécurisé (Main à main)</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-tertiary-fixed">Shop &amp; Collections</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">Toutes les créations</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="collections" href="#">Collection SS25</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">Hoodies &amp; Sweats Lourds</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">T-Shirts Oversize 280GSM</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">Accessoires &amp; Casquettes</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-tertiary-fixed">Atelier &amp; Services</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="customization" href="#">Personnalisation DTF Ultra-HD</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="customization" href="#">Broderie Or &amp; Relief Puff</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="customization" href="#">Sérigraphie Artisanale</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="b2b-pro" href="#">Commandes en Gros / Grossistes</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="b2b-pro" href="#">Merchandising Entreprises</a></nav></div><div class="lg:col-span-4 flex flex-col gap-space-md"><span class="font-label-lg text-label-lg uppercase tracking-wider text-tertiary-fixed">Atelier Newsletter</span><p class="font-body-sm text-body-sm text-secondary-fixed-dim">Recevez les accès prioritaires aux drops limités et devis exclusifs pour vos séries de confection.</p><div class="flex w-full"><input class="w-full bg-surface-container-high/10 text-on-primary px-4 py-3 text-body-sm border border-outline font-body-md focus:border-tertiary-fixed focus:outline-none placeholder:text-outline" placeholder="Votre adresse email..." type="email"/><button class="bg-tertiary-fixed text-tertiary font-label-lg text-label-lg uppercase px-6 py-3 font-bold hover:bg-on-primary hover:text-primary transition-colors shrink-0" type="button">Rejoindre</button></div><div class="flex items-center gap-space-md pt-space-xs"><a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-tertiary-fixed transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-tertiary-fixed transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span>Instagram</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-tertiary-fixed transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">play_circle</span>TikTok @pretwear</a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-label-sm font-label-sm text-secondary-fixed-dim uppercase"><p>© 2025 PRETWEAR ALGIERS. CONÇU &amp; CONFECTIONNÉ EN ALGÉRIE. TOUS DROITS RÉSERVÉS.</p><div class="flex items-center gap-space-lg"><a class="hover:text-tertiary-fixed transition-colors" data-path="terms-cod" href="#">Conditions COD &amp; Wilayas</a><a class="hover:text-tertiary-fixed transition-colors" data-path="contact" href="#">Support Client</a><a class="hover:text-tertiary-fixed transition-colors" data-path="b2b-pro" href="#">Espace Revendeurs</a></div></div></div></footer></body></html>

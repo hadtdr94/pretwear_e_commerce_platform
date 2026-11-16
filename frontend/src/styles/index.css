@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1a1c1b;
+  background-color: #f9f9f7;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #f9f9f7;
+  color: #1a1c1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-10;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center border border-primary bg-primary px-6 py-3 font-label text-sm font-semibold uppercase tracking-label text-white transition-colors hover:bg-accent hover:text-primary disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center border border-primary bg-white px-6 py-3 font-label text-sm font-semibold uppercase tracking-label text-primary transition-colors hover:bg-primary hover:text-white;
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center border border-accent bg-accent px-6 py-3 font-label text-sm font-semibold uppercase tracking-label text-primary transition-colors hover:bg-primary hover:text-accent;
+  }
+  .chip {
+    @apply inline-flex items-center border border-light-grey bg-surface-container-low px-2.5 py-1 font-label text-[11px] font-semibold uppercase tracking-label text-primary;
+  }
+  .input-field {
+    @apply w-full border border-light-grey bg-white px-4 py-3 font-body text-sm text-on-surface outline-none transition-colors placeholder:text-outline focus:border-primary;
+  }
+  .section-title {
+    @apply font-heading text-3xl font-bold uppercase tracking-tight text-primary sm:text-4xl;
+  }
+  .section-kicker {
+    @apply font-label text-xs font-semibold uppercase tracking-[0.2em] text-on-surface-variant;
+  }
+}

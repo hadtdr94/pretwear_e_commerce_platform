@@ -1,0 +1,73 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pretwear-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-pretwear}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pretwear_password}
+      POSTGRES_DB: ${POSTGRES_DB:-pretwear}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-pretwear} -d ${POSTGRES_DB:-pretwear}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - pretwear-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pretwear-backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      PORT: ${PORT:-4000}
+      DATABASE_URL: ${DATABASE_URL:-postgresql://pretwear:pretwear_password@postgres:5432/pretwear?schema=public}
+      CLIENT_URL: ${CLIENT_URL:-http://localhost}
+    ports:
+      - "4000:4000"
+    volumes:
+      - uploads_data:/app/src/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:4000/api/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    networks:
+      - pretwear-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: /api
+    container_name: pretwear-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - pretwear-network
+
+volumes:
+  postgres_data:
+  uploads_data:
+
+networks:
+  pretwear-network:
+    driver: bridge

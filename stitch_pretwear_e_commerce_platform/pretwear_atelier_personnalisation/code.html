@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "tertiary": "#000000", "error": "#ba1a1a", "surface-dim": "#dadad8", "surface-container-high": "#e8e8e6", "secondary": "#5d5f5f", "inverse-primary": "#c8c6c5", "surface-container-lowest": "#ffffff", "surface-container-low": "#f4f4f2", "surface-container": "#eeeeec", "on-primary": "#ffffff", "secondary-fixed": "#e2e2e2", "on-background": "#1a1c1b", "on-tertiary-container": "#9b8059", "on-tertiary-fixed-variant": "#594321", "on-secondary-fixed-variant": "#454747", "secondary-fixed-dim": "#c6c6c7", "on-surface": "#1a1c1b", "on-surface-variant": "#444748", "inverse-on-surface": "#f1f1ef", "primary-fixed": "#e5e2e1", "surface-container-highest": "#e2e3e1", "tertiary-fixed-dim": "#e1c296", "primary-container": "#1c1b1b", "on-primary-fixed": "#1c1b1b", "background": "#f9f9f7", "surface": "#f9f9f7", "on-secondary": "#ffffff", "tertiary-container": "#281800", "on-primary-container": "#858383", "secondary-container": "#dfe0e0", "on-error": "#ffffff", "on-primary-fixed-variant": "#474646", "on-tertiary-fixed": "#281800", "on-secondary-container": "#616363", "outline": "#747878", "tertiary-fixed": "#ffddb0", "surface-variant": "#e2e3e1", "surface-tint": "#5f5e5e", "on-error-container": "#93000a", "outline-variant": "#c4c7c7", "on-secondary-fixed": "#1a1c1c", "primary": "#000000", "on-tertiary": "#ffffff", "surface-bright": "#f9f9f7", "inverse-surface": "#2f3130" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "3.5rem", "space-xl": "3rem", "space-lg": "1.5rem", "gutter-desktop": "2.5rem", "margin": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "label-lg": [ "Space Grotesk" ], "headline-lg-mobile": [ "Syne" ], "display-mobile": [ "Syne" ], "label-md": [ "Space Grotesk" ], "display": [ "Syne" ], "price-display": [ "Space Grotesk" ], "headline-lg": [ "Syne" ], "body-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Syne" ], "headline-sm": [ "Syne" ] }, "fontSize": { "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg-mobile": [ "2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-mobile": [ "2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" } ], "display": [ "4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "price-display": [ "1.5rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "500" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "headline-md": [ "2rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "700" } ], "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-tertiary-fixed selection:text-tertiary"><div class="fixed top-0 left-0 w-full z-50"><aside class="w-full bg-primary text-on-primary border-b border-surface-container-high/10 overflow-hidden"><div class="w-full px-margin-desktop h-9 flex items-center justify-between text-label-sm font-label-sm uppercase tracking-widest"><div class="flex items-center gap-space-md overflow-hidden whitespace-nowrap"><span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span><span>LIVRAISON 58 WILAYAS</span><span class="text-outline">•</span><span>NOUVELLE COLLECTION SS25 DISPONIBLE</span><span class="text-outline">•</span><span class="text-tertiary-fixed-dim">PERSONNALISATION DTF &amp; BRODERIE SUR MESURE</span><span class="text-outline">•</span><span>COMMANDES EN GROS &amp; B2B</span></div><div class="hidden lg:flex items-center gap-space-lg text-secondary-fixed-dim"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">local_shipping</span><span>PAIEMENT À LA LIVRAISON (COD)</span></span><span class="text-outline">|</span><span>BORDJ EL KIFFAN, ALGER</span></div></div></aside><header class="w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-space-md shrink-0"><img alt="PRETWEAR Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA0mDhFo2ej4txSK3MTbe-BjMFimI3XdOEnFfvKjEwzx-j1GKvzUBdyO5AdStGFXnU0t_pvZoWfoeWt3Ifpl0faRPDwEdAIFZrGxsmri97_bMnips8e5QxiOYo8etGsMf7lbRzFmsrzopoShKIGNuWUkuBDBwpFmJgMTK5T5O-3K2zWQiYKKzVst3FU3XwOPGCzj5pJuGCzTRUF1YS6NIG-XXNs74KXoSvHlBvqXQ"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-primary font-bold leading-none">PRETWEAR</span><span class="font-label-sm text-label-sm tracking-[0.2em] text-secondary text-[9px] uppercase leading-tight">Atelier &amp; Streetwear Algiers</span></a></div><nav class="hidden xl:flex items-center gap-space-lg h-full" data-active-classes="text-primary font-bold relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-primary"><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="home" href="#">Home</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="shop" href="#">Shop</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="collections" href="#">Collections</a><a aria-current="page" class="uppercase py-2 transition-colors flex items-center gap-space-xs text-primary font-bold relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-primary" data-path="customization" href="#"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>Customization</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="b2b-pro" href="#">B2B &amp; Pro</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="about" href="#">About</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center px-space-sm py-1 bg-surface-container-low text-primary font-label-sm text-label-sm uppercase tracking-wider rounded"><span class="text-tertiary font-bold">DZD</span><span class="mx-1 text-outline-variant">/</span><span class="text-secondary">DA</span></div><button aria-label="Search catalog" class="w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="View wishlist" class="relative w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span></a><button aria-label="Open shopping bag" class="relative w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-primary text-on-primary font-label-sm text-[10px] leading-none flex items-center justify-center font-bold">3</span></button><div class="flex items-center gap-space-xs pl-space-xs"><a class="flex items-center gap-space-xs p-1 hover:bg-surface-container rounded transition-colors" data-path="account" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFs1rGiXB2UP7nzuTHSaHEpDp2JV-wVjUhhYX4P2d4P4nigsB_Muqx9PPmp_nn_gjXgz_D8yl74fTagzfL9jQXz9FpFYwBHBBNiGiM_YiU-iZGY_BNqIJ93MpbKV0RljeozaASmkXqWQcjaM4BxuwMIs4259w_9K-UZ5ZkPHzzcrdU3rmNksAOSc9DbsJNfTHP8fxR_5aXPz2E1TAr5o6zuEUs4zgCgGdXFFiNOA"/><span class="material-symbols-outlined text-[18px] text-on-surface-variant hidden md:block">expand_more</span></a></div></div></div></header></div><main class="w-full pt-[116px] bg-surface min-h-[calc(100vh-116px)]"><div class="flex flex-col w-full">
+<!-- Editorial Manifesto / Atelier Headline Section -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col gap-space-xs max-w-4xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2.5 h-2.5 bg-primary"></span>
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary">Atelier Textile Algiers • Bordj El Kiffan</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">58 Wilayas COD</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tighter uppercase font-extrabold leading-[1.05]">
+          Atelier de Personnalisation Textile Haut de Gamme
+        </h1>
+<p class="font-display text-headline-md italic text-on-tertiary-container tracking-tight pt-1">
+          “Wear it. Brand it. Make it yours.”
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md shrink-0">
+<a class="px-8 py-4 bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider hover:bg-tertiary-fixed hover:text-tertiary transition-all shadow-md" href="#devis-form">
+          Configurer Mon Projet
+        </a>
+<a class="px-8 py-4 bg-surface-container-lowest text-primary font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container transition-all shadow-sm" href="#showroom">
+          Visiter l'Atelier
+        </a>
+</div>
+</div>
+<!-- Editorial Hero Split Card with Machinery visual & Key Metrics -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mt-space-lg">
+<div class="lg:col-span-7 relative h-[520px] bg-surface-container overflow-hidden shadow-xl group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Industrial computer embroidery machine close-up stitching an intricate heraldic luxury gold crest on navy heavyweight cotton fabric, brass threads glowing, shallow depth of field, artisanal garment manufacturing atelier in Algiers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDheGVOb1B94pzahNtUlMOrIQDQLM06WRZ5i0edAb3xeoZTqJovoFEvUhyxhPB8qC4VdJY9vvLfc_KzQBCrx5eCEmmkLcdliLGHSgqMHY6q50U07T8lHxqytbt7bVtHdMzTNBKaCkzQ7lkg_Ax6Z9pr7bnkOfHuoBzCDBOvnZb1CkCsyB3kcba7ckTSM_FLixHWJjJkoBTjjzlwPInw-CJqEr-gq0mJ95f1ZRifNQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex flex-col justify-end p-8 text-on-primary">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-widest">En direct de l'Atelier 01</span>
+</div>
+<h2 class="font-headline-md text-headline-md uppercase text-on-primary">Broderie Industrielle 12 Aiguilles • DTF 8 Couleurs</h2>
+<p class="font-body-md text-body-md text-secondary-fixed-dim max-w-xl mt-1">Confection sur mesure, finitions brodées en fil métallique et transferts haute définition sur grammages lourds (280g à 460g/m²).</p>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-md">
+<!-- Metric Grid -->
+<div class="bg-surface-container-lowest p-8 shadow-sm flex flex-col justify-between flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Capacité &amp; Précision</span>
+<div class="grid grid-cols-2 gap-space-lg my-6">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">4-7 J</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Délai moyen de production nationale</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Conforme BAT (Bon à tirer numérique)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">58</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wilayas couvertes en contre-remboursement</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">10 pcs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Commande minimale personnalisée</span>
+</div>
+</div>
+<div class="pt-4 bg-surface-container-low p-4 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase text-primary font-bold">Certification Coton Peigné Bio</span>
+<span class="font-body-sm text-body-sm text-secondary">Tricotage lourd exclusif PRETWEAR certifié sans rétrécissement</span>
+</div>
+</div>
+</div>
+<!-- Fast Contact Banner -->
+<div class="bg-primary text-on-primary p-6 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 bg-surface-container-high/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary-fixed">Assistance Technique Express</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed">Besoin d'un devis express WhatsApp ?</span>
+</div>
+</div>
+<a class="px-4 py-2 bg-tertiary-fixed text-tertiary font-label-sm text-label-sm uppercase font-bold hover:bg-on-primary transition-colors" href="https://wa.me/213550000000" target="_blank">
+            Discuter
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Showdown: 3 Technologies Comparative Grid -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface-container-low">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary">Savoir-Faire Artisanal &amp; Industriel</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold tracking-tight text-primary">Les Technologies de Marquage</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2 md:mt-0">
+        Chaque textile requiert une technique adaptée. Comparez nos procédés de personnalisation réalisés dans nos ateliers algérois.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Tech 1: DTF -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-shadow group">
+<div class="flex flex-col">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro macro detailed photograph of ultra high definition Direct to film DTF color print heat pressed onto dense black oversized cotton t-shirt, vibrant gradients and microscopic dot resolution, luxury streetwear finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEik57gqGhNDnU1V-Kl3WLg83cYiSHyEpBpVFy_7OA60AEwGu153scqK8j6_8J9L6OchKLiqBqzHvwLRqWa_btx_XZ45HPh8AYszOckhpOhlaAqhpAAGg35ruBD9rozd1T3bio8afneX9e-Kx0DrNuktRgpFuWwDLPLKIOlb5pKQpuj639E4jiQ-Djh3qWjoB1GyWxpau2Z0q1fTYwyCUaLRFeFhGBHv4rKuksRg"/>
+<div class="absolute top-3 left-3 px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+              Haute Définition
+            </div>
+</div>
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Impression DTF</h3>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Dès 10 pcs</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Direct-to-Film 8 têtes d'impression. Idéal pour les visuels complexes, les dégradés photographiques, les typographies fines et les petites séries à grande précision de couleurs.
+          </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-secondary font-label-sm uppercase">Rendu Couleurs</span>
+<span class="font-label-md font-bold text-primary">Photographique 2400 DPI</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[96%]"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-2">
+<span class="text-secondary font-label-sm uppercase">Résistance Lavage</span>
+<span class="font-label-md font-bold text-primary">60+ cycles (40°C)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[90%]"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Photos / Dégradés</span>
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Toucher Souple</span>
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Multi-couleurs</span>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase text-secondary">Usage préconisé:</span>
+<span class="font-label-md text-label-md uppercase font-bold text-primary">T-shirts &amp; Hoodies Streetwear</span>
+</div>
+</div>
+<!-- Tech 2: Broderie Industrielle -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-shadow group relative">
+<div class="absolute -top-3 right-6 px-3 py-1 bg-tertiary-fixed text-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-sm">
+          Finition Signature
+        </div>
+<div class="flex flex-col">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tactile macro close-up of 3D puff high density gold metallic and matte navy thread industrial embroidery on a heavyweight fleece hoodie chest, luxury sculptural stitching texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg8WWmjPRdFNKoTEm5-TDGutOKFkIMwk7_uVjilUaCk5i9cnvFheujEo_vIbIXuuuyJ7Bjs5T39NHs5RlxoPvfI0JWScXbONOUGftiyVqeO8HRaAdYhL3QHA1Fx3yc0_hjxe2hrsCVxyE7daOalWB3Mttczx2wyg9WLF1fNV1VeHazoJ-vg3bi6cL9hmI7Zqd-aBdRHsuZkW4TxYE6ZCqWVudz-Hy4jYpGIDOfhA"/>
+<div class="absolute top-3 left-3 px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+              Relief 3D Puff &amp; Plat
+            </div>
+</div>
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Broderie Industrielle</h3>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Dès 15 pcs</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Fils polyester et lurex haute ténacité. Rendu tridimensionnel luxueux, inaltérable dans le temps. La signature noble par excellence pour polos, casquettes et vestes d'entreprise.
+          </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-secondary font-label-sm uppercase">Prestige &amp; Durabilité</span>
+<span class="font-label-md font-bold text-primary">À Vie (Indestructible)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[100%]"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-2">
+<span class="text-secondary font-label-sm uppercase">Relief Tactile</span>
+<span class="font-label-md font-bold text-primary">Mousse EVA 3D Puff</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[98%]"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Casquettes 6P</span>
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Polos Piqué</span>
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Fils Or &amp; Argent</span>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase text-secondary">Usage préconisé:</span>
+<span class="font-label-md text-label-md uppercase font-bold text-primary">Corporate, Clubs &amp; Luxury</span>
+</div>
+</div>
+<!-- Tech 3: Sérigraphie Textile -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-shadow group">
+<div class="flex flex-col">
+<div class="relative h-60 w-full overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal silk screen printing squeegee pulling dense white ink across mesh screen over flat black textiles in garment workshop, ink textures, atelier lighting, industrial craftsmanship" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvLeFVY9qSCqURSfiKKlIfXS2iree_UkK8PQxO4HnzfDD93nKKgG45dJiMV3havWc4eEPWjgfIiUdQZX_TZ018R-1_Bxg4iQ1YyCTLoBwQ7jMC8Mm6LfwjfSoYRK27AKFVl1MTpdehe-Z1XLq5Hh8IBQNFN7UzRG3eMyl1nZO21Ru_lj67TUhPsKhzgEaVrGTltkkKWNbPHMrfHGsLHK9hOPpT09sgGkP2Ge2DwA"/>
+<div class="absolute top-3 left-3 px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+              Grands Volumes
+            </div>
+</div>
+<div class="flex items-baseline justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Sérigraphie Premium</h3>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Dès 50 pcs</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Encres plastisol et à l'eau écologiques cuites au four tunnel. Le meilleur coût unitaire pour les festivals, universités, associations sportives et dotations d'équipe massives.
+          </p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-secondary font-label-sm uppercase">Rentabilité Gros Volume</span>
+<span class="font-label-md font-bold text-primary">Optimale &gt; 100 pcs</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[95%]"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm pt-2">
+<span class="text-secondary font-label-sm uppercase">Opacité Teinte Noire</span>
+<span class="font-label-md font-bold text-primary">Couvrance Totale 100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[92%]"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Tirages Massifs</span>
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Encre Fluo &amp; Or</span>
+<span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[11px] uppercase">Prix Dégressif</span>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase text-secondary">Usage préconisé:</span>
+<span class="font-label-md text-label-md uppercase font-bold text-primary">Événements &amp; Merch Universitaire</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Project Builder Form Section (Database Connected Simulator) -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface" id="devis-form">
+<div class="max-w-5xl mx-auto">
+<!-- Section Title & Status Indicator -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-tertiary-container font-bold">Configurateur Intelligent</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold tracking-tight text-primary mt-1">
+            Demande de Devis Atelier &amp; Production
+          </h2>
+</div>
+<div class="flex items-center gap-space-xs mt-2 md:mt-0 px-4 py-2 bg-surface-container-high">
+<span class="w-2.5 h-2.5 bg-tertiary-fixed rounded-full"></span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Traitement sous 24h ouvrées</span>
+</div>
+</div>
+<!-- Main Form Container -->
+<form class="bg-surface-container-lowest p-8 md:p-12 shadow-xl flex flex-col gap-10" id="customizationQuoteForm" onsubmit="event.preventDefault(); handleCustomizationSubmit();">
+<!-- STEP 1: Client Coordinates -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">01</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Vos Coordonnées Professionnelles ou Particulier</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Account Type Switcher -->
+<div class="md:col-span-3 flex gap-space-md">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary" name="client_type" onchange="toggleCompanyField(true)" type="radio" value="entreprise"/>
+<span class="font-label-md text-label-md uppercase font-semibold text-primary">Entreprise / Agence / Marque</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 accent-primary" name="client_type" onchange="toggleCompanyField(false)" type="radio" value="particulier"/>
+<span class="font-label-md text-label-md uppercase font-semibold text-secondary">Particulier / Créateur Solo</span>
+</label>
+</div>
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="fullName">Nom &amp; Prénom *</label>
+<input class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none transition-colors" id="fullName" placeholder="ex. Yacine Benali" required="" type="text"/>
+</div>
+<!-- Phone (DZ +213) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="phone">Numéro Algérien (+213) *</label>
+<div class="flex">
+<span class="bg-surface-container-high px-3 py-3 font-label-md text-label-md text-primary font-bold flex items-center">DZ</span>
+<input class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none transition-colors" id="phone" placeholder="0550 12 34 56" required="" type="tel"/>
+</div>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="email">Email de Contact *</label>
+<input class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none transition-colors" id="email" placeholder="contact@votre-marque.dz" required="" type="email"/>
+</div>
+<!-- Company Name (Dynamic) -->
+<div class="md:col-span-3 flex flex-col gap-1.5" id="companyBlock">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="companyName">Raison Sociale / Nom de Marque / Organisation</label>
+<input class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none transition-colors" id="companyName" placeholder="ex. Studio Digital DZ, Casbah Coffee Club..." type="text"/>
+</div>
+</div>
+</div>
+<!-- STEP 2: Support Selection -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">02</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Choix du Support Textile Brut PRETWEAR</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm" id="garmentSelector">
+<!-- Item 1 -->
+<label class="cursor-pointer group">
+<input checked="" class="sr-only peer" name="garment" onchange="updateLiveEstimate()" type="radio" value="tshirt_280"/>
+<div class="p-3 bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center text-center transition-colors">
+<span class="material-symbols-outlined text-[32px] mb-2">styler</span>
+<span class="font-label-md text-label-md uppercase font-bold">T-Shirt Lourd</span>
+<span class="text-[10px] uppercase font-label-sm text-secondary peer-checked:text-secondary-fixed">280g Oversized</span>
+</div>
+</label>
+<!-- Item 2 -->
+<label class="cursor-pointer group">
+<input class="sr-only peer" name="garment" onchange="updateLiveEstimate()" type="radio" value="hoodie_400"/>
+<div class="p-3 bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center text-center transition-colors">
+<span class="material-symbols-outlined text-[32px] mb-2">dry_cleaning</span>
+<span class="font-label-md text-label-md uppercase font-bold">Hoodie Ultra</span>
+<span class="text-[10px] uppercase font-label-sm text-secondary peer-checked:text-secondary-fixed">400g French Terry</span>
+</div>
+</label>
+<!-- Item 3 -->
+<label class="cursor-pointer group">
+<input class="sr-only peer" name="garment" onchange="updateLiveEstimate()" type="radio" value="polo_pique"/>
+<div class="p-3 bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center text-center transition-colors">
+<span class="material-symbols-outlined text-[32px] mb-2">apparel</span>
+<span class="font-label-md text-label-md uppercase font-bold">Polo Piqué</span>
+<span class="text-[10px] uppercase font-label-sm text-secondary peer-checked:text-secondary-fixed">240g Coton Peigné</span>
+</div>
+</label>
+<!-- Item 4 -->
+<label class="cursor-pointer group">
+<input class="sr-only peer" name="garment" onchange="updateLiveEstimate()" type="radio" value="cap_6panel"/>
+<div class="p-3 bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center text-center transition-colors">
+<span class="material-symbols-outlined text-[32px] mb-2">sports_baseball</span>
+<span class="font-label-md text-label-md uppercase font-bold">Casquette 6P</span>
+<span class="text-[10px] uppercase font-label-sm text-secondary peer-checked:text-secondary-fixed">Twill Rigide</span>
+</div>
+</label>
+<!-- Item 5 -->
+<label class="cursor-pointer group">
+<input class="sr-only peer" name="garment" onchange="updateLiveEstimate()" type="radio" value="softshell"/>
+<div class="p-3 bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center text-center transition-colors">
+<span class="material-symbols-outlined text-[32px] mb-2">skateboarding</span>
+<span class="font-label-md text-label-md uppercase font-bold">Veste Softshell</span>
+<span class="text-[10px] uppercase font-label-sm text-secondary peer-checked:text-secondary-fixed">Coupe-vent Pro</span>
+</div>
+</label>
+<!-- Item 6 -->
+<label class="cursor-pointer group">
+<input class="sr-only peer" name="garment" onchange="updateLiveEstimate()" type="radio" value="apron_resto"/>
+<div class="p-3 bg-surface-container-low peer-checked:bg-primary peer-checked:text-on-primary flex flex-col items-center text-center transition-colors">
+<span class="material-symbols-outlined text-[32px] mb-2">cooking</span>
+<span class="font-label-md text-label-md uppercase font-bold">Tablier Toile</span>
+<span class="text-[10px] uppercase font-label-sm text-secondary peer-checked:text-secondary-fixed">Cuir &amp; Toile Canvas</span>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 3: Quantities & Sizing Breakdown -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">03</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Volume Souhaité &amp; Répartition des Tailles</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Global Quantity Bracket -->
+<div class="md:col-span-5 flex flex-col gap-2">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="quantityBracket">Volume Total Estimé *</label>
+<select class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none" id="quantityBracket" onchange="updateLiveEstimate()">
+<option value="10-25">10 à 25 pièces (Série Test / Petite capsule)</option>
+<option selected="" value="26-50">26 à 50 pièces (Standard Drop)</option>
+<option value="51-100">51 à 100 pièces (Production Boutique)</option>
+<option value="101-250">101 à 250 pièces (Volume Entreprise / B2B)</option>
+<option value="251-500">251 à 500 pièces (Production Massive)</option>
+<option value="500+">Plus de 500 pièces (Grand Compte &amp; Export)</option>
+</select>
+<span class="text-[12px] font-body-sm text-on-surface-variant">Plus le volume est élevé, plus le tarif unitaire diminue de manière dégressive.</span>
+</div>
+<!-- Size Split Table Inputs -->
+<div class="md:col-span-7 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Répartition Indicative des Tailles</span>
+<div class="grid grid-cols-5 gap-2">
+<div class="flex flex-col items-center bg-surface-container-low p-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">S</span>
+<input class="w-full text-center bg-surface-container-lowest py-1 font-body-sm text-body-sm mt-1 focus:outline-none" min="0" placeholder="0" type="number"/>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low p-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">M</span>
+<input class="w-full text-center bg-surface-container-lowest py-1 font-body-sm text-body-sm mt-1 focus:outline-none" min="0" placeholder="10" type="number"/>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low p-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">L</span>
+<input class="w-full text-center bg-surface-container-lowest py-1 font-body-sm text-body-sm mt-1 focus:outline-none" min="0" placeholder="15" type="number"/>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low p-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">XL</span>
+<input class="w-full text-center bg-surface-container-lowest py-1 font-body-sm text-body-sm mt-1 focus:outline-none" min="0" placeholder="10" type="number"/>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low p-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">XXL</span>
+<input class="w-full text-center bg-surface-container-lowest py-1 font-body-sm text-body-sm mt-1 focus:outline-none" min="0" placeholder="5" type="number"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 4: Technique & Placements -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">04</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Technique Souhaitée &amp; Emplacements de Marquage</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Technique -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="techniqueSelect">Procédé de Confection Principal</label>
+<select class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none" id="techniqueSelect" onchange="updateLiveEstimate()">
+<option value="dtf">Impression DTF Haute Définition (Couleurs illimitées)</option>
+<option value="embroidery">Broderie Industrielle Haute Précision (Relief 3D / Fil Or)</option>
+<option value="silkscreen">Sérigraphie Artisanale Premium (Grands volumes)</option>
+<option value="mixte">Mixte (ex. Broderie Coeur + Grand Dos DTF)</option>
+</select>
+</div>
+<!-- Placement Checklist -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Zones de Marquage Souhaitées</span>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 bg-surface-container-low p-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary" name="placement" onchange="updateLiveEstimate()" type="checkbox" value="coeur"/>
+<span class="font-body-sm text-body-sm text-primary">Face Coeur (Poitrine)</span>
+</label>
+<label class="flex items-center gap-2 bg-surface-container-low p-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary" name="placement" onchange="updateLiveEstimate()" type="checkbox" value="dos"/>
+<span class="font-body-sm text-body-sm text-primary">Grand Dos Centré</span>
+</label>
+<label class="flex items-center gap-2 bg-surface-container-low p-2.5 cursor-pointer">
+<input class="w-4 h-4 accent-primary" name="placement" onchange="updateLiveEstimate()" type="checkbox" value="manche"/>
+<span class="font-body-sm text-body-sm text-primary">Manche Gauche / Droite</span>
+</label>
+<label class="flex items-center gap-2 bg-surface-container-low p-2.5 cursor-pointer">
+<input class="w-4 h-4 accent-primary" name="placement" onchange="updateLiveEstimate()" type="checkbox" value="col"/>
+<span class="font-body-sm text-body-sm text-primary">Étiquette Col Intérieur</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 5: File Upload & Drag n Drop Simulation -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">05</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Téléversement de Vos Fichiers &amp; Maquettes</h3>
+</div>
+<div class="bg-surface-container-low p-8 text-center flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container transition-colors group relative" id="dropArea" onclick="document.getElementById('fileInput').click()">
+<input accept=".ai,.eps,.pdf,.png,.svg" class="hidden" id="fileInput" multiple="" onchange="handleFileSelect(this)" type="file"/>
+<div class="w-16 h-16 bg-surface-container-highest group-hover:bg-primary group-hover:text-on-primary text-primary flex items-center justify-center mb-3 transition-colors">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md uppercase font-bold text-primary">
+              Cliquez pour choisir un fichier ou glissez-déposez ici
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Formats vectoriels conseillés : <strong>AI, PDF, EPS, SVG</strong> ou <strong>PNG Transparent 300 DPI</strong> (Max 25 Mo).
+            </p>
+<div class="mt-3 text-label-sm font-label-sm uppercase text-on-tertiary-container font-bold hidden" id="fileUploadStatus"></div>
+</div>
+</div>
+<!-- STEP 6: 58 Algerian Wilayas & Delivery Address -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">06</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Livraison 58 Wilayas &amp; Lieu de Réception</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-5 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="wilayaSelect">Wilaya de Destination *</label>
+<select class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none" id="wilayaSelect" required="">
+<option value="16">16 - Alger</option>
+<option value="31">31 - Oran</option>
+<option value="25">25 - Constantine</option>
+<option value="19">19 - Sétif</option>
+<option value="09">09 - Blida</option>
+<option value="35">35 - Boumerdès</option>
+<option value="15">15 - Tizi Ouzou</option>
+<option value="06">06 - Béjaïa</option>
+<option value="13">13 - Tlemcen</option>
+<option value="23">23 - Annaba</option>
+<option value="05">05 - Batna</option>
+<option value="07">07 - Biskra</option>
+<option value="30">30 - Ouargla</option>
+<option value="47">47 - Ghardaïa</option>
+<option value="all_wilayas">Autres Wilayas (58 Couvertes)</option>
+</select>
+</div>
+<div class="md:col-span-7 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="address">Commune &amp; Adresse de Livraison ou Retrait Atelier</label>
+<input class="w-full bg-surface-container-low px-4 py-3 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none" id="address" placeholder="ex. Bab Ezzouar, Alger ou Retrait Direct Showroom" type="text"/>
+</div>
+</div>
+</div>
+<!-- STEP 7: Confection Notes & Lead Time -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm pb-2">
+<span class="w-7 h-7 bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">07</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary">Instructions Spécifiques &amp; Délais Souhaités</h3>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" for="projectNotes">Notes de Confection (Couleurs Pantone, Références fil, Date limite impérative)</label>
+<textarea class="w-full bg-surface-container-low p-4 font-body-md text-body-md text-primary focus:bg-surface-container-lowest focus:outline-none" id="projectNotes" placeholder="Indiquez ici toute particularité: étiquette tissée personnalisée, emballage sous polybag individuel, date d'événement urgent..." rows="3"></textarea>
+</div>
+</div>
+<!-- LIVE PRICE SIMULATION BOX & SUBMIT CTA -->
+<div class="bg-surface-container p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Fourchette Estimative Indicative HT</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-label-sm uppercase font-bold text-primary">Guide tarifaire</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-price-display text-headline-md font-bold text-primary tracking-tight" id="estimatedPrice">1 850 - 2 400 DZD</span>
+<span class="font-body-sm text-body-sm text-secondary">/ pièce finie</span>
+</div>
+<span class="text-[12px] font-body-sm text-on-surface-variant">Devis définitif exact confirmé après inspection vectorielle par nos chefs d'atelier.</span>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full md:w-auto">
+<button class="w-full sm:w-auto px-10 py-5 bg-primary text-on-primary font-label-lg text-label-lg uppercase font-bold tracking-wider hover:bg-tertiary-fixed hover:text-tertiary transition-all shadow-xl text-center" type="submit">
+              Soumettre Mon Projet de Personnalisation
+            </button>
+</div>
+</div>
+<!-- Submission Feedback Message -->
+<div class="hidden p-6 bg-surface-container-highest text-primary flex items-start gap-4" id="submitSuccessAlert">
+<span class="material-symbols-outlined text-[32px] text-primary shrink-0">task_alt</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase font-bold">Projet Enregistré avec Succès !</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Votre dossier a été transmis à la direction technique de l'Atelier PRETWEAR Bordj El Kiffan. Un chef de projet vous contactera par téléphone ou WhatsApp sous 24h avec le Bon à Tirer (BAT) numérique et la facture pro-forma.
+            </p>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- Transparent B2B Pricing Tier Grid -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary">Transparence Tarifaire Algérie</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold tracking-tight text-primary">Barème Indicatif Dégressif B2B</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Tarifs dégressifs indicatifs calculés sur base T-Shirt Lourd 280g avec marquage simple face 1 couleur ou DTF format A4.
+      </p>
+</div>
+<!-- Pricing Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-desktop">
+<!-- Tier 1 -->
+<div class="bg-surface-container-low p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Échelon Capsule</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary mt-1">10 à 25 Pcs</h3>
+<div class="my-4">
+<span class="font-price-display text-price-display font-bold text-primary">2 400 DZD</span>
+<span class="font-body-sm text-body-sm text-secondary">/ unité</span>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Marquage DTF ou Broderie Coeur</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>BAT Numérique 3D inclus</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Expédition 58 Wilayas COD</li>
+</ul>
+</div>
+<a class="mt-6 block text-center py-2.5 bg-surface-container-highest text-primary font-label-sm text-label-sm uppercase font-bold hover:bg-primary hover:text-on-primary transition-colors" href="#devis-form">
+          Choisir Cet Échelon
+        </a>
+</div>
+<!-- Tier 2 -->
+<div class="bg-surface-container-low p-6 flex flex-col justify-between shadow-sm relative">
+<div class="absolute -top-3 left-6 px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-[10px] uppercase font-bold">
+          Populaire Marques
+        </div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Échelon Drop</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary mt-1">26 à 50 Pcs</h3>
+<div class="my-4">
+<span class="font-price-display text-price-display font-bold text-primary">1 950 DZD</span>
+<span class="font-body-sm text-body-sm text-secondary">/ unité</span>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>DTF ou Sérigraphie 2 couleurs</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Échantillon de pré-série photo</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Délai 5 à 7 jours ouvrés</li>
+</ul>
+</div>
+<a class="mt-6 block text-center py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold hover:bg-tertiary-fixed hover:text-tertiary transition-colors" href="#devis-form">
+          Choisir Cet Échelon
+        </a>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-low p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Échelon Pro</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary mt-1">51 à 150 Pcs</h3>
+<div class="my-4">
+<span class="font-price-display text-price-display font-bold text-primary">1 650 DZD</span>
+<span class="font-body-sm text-body-sm text-secondary">/ unité</span>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Multi-emplacements inclus</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Étiquette de taille personnalisée</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Livraison express offerte Alger</li>
+</ul>
+</div>
+<a class="mt-6 block text-center py-2.5 bg-surface-container-highest text-primary font-label-sm text-label-sm uppercase font-bold hover:bg-primary hover:text-on-primary transition-colors" href="#devis-form">
+          Choisir Cet Échelon
+        </a>
+</div>
+<!-- Tier 4 -->
+<div class="bg-surface-container-low p-6 flex flex-col justify-between shadow-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Échelon Grossiste</span>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-primary mt-1">150+ Pcs</h3>
+<div class="my-4">
+<span class="font-price-display text-price-display font-bold text-primary">Sur Devis Spécifique</span>
+<span class="font-body-sm text-body-sm text-secondary">/ volume sur mesure</span>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Teinture pantone personnalisée</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Packaging boîte luxe dédié</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary">check</span>Contrat cadre &amp; facturation Pro</li>
+</ul>
+</div>
+<a class="mt-6 block text-center py-2.5 bg-surface-container-highest text-primary font-label-sm text-label-sm uppercase font-bold hover:bg-primary hover:text-on-primary transition-colors" href="#devis-form">
+          Négocier Volume
+        </a>
+</div>
+</div>
+</section>
+<!-- Showroom & Physical Atelier Presence Section -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface" id="showroom">
+<div class="bg-primary text-on-primary p-8 md:p-12 shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>Showroom &amp; Espace Échantillonnage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold text-on-primary tracking-tight">
+            Touchez Nos Matières &amp; Discutez Avec Nos Confectionneurs
+          </h2>
+<p class="font-body-md text-body-md text-secondary-fixed max-w-xl">
+            Vous souhaitez valider le toucher de notre molleton 400g French Terry ou vérifier la densité de nos broderies 3D avant de lancer votre production ? Prenez rendez-vous directement à notre showroom de Bordj El Kiffan.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">pin_drop</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase font-bold text-on-primary">Adresse Atelier</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Route Nationale 24, Bordj El Kiffan, Alger</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase font-bold text-on-primary">Horaires Showroom</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">Samedi au Jeudi : 09h00 - 18h30</span>
+</div>
+</div>
+</div>
+<div class="pt-4 flex flex-wrap items-center gap-space-md">
+<a class="px-6 py-3.5 bg-tertiary-fixed text-tertiary font-label-md text-label-md uppercase font-bold hover:bg-on-primary transition-colors flex items-center gap-2" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Itinéraire Google Maps</span>
+</a>
+<a class="px-6 py-3.5 bg-surface-container-high/20 text-on-primary font-label-md text-label-md uppercase font-bold hover:bg-surface-container-high/40 transition-colors flex items-center gap-2" href="tel:+213550000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Prendre RDV Showroom</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="w-full h-80 md:h-96 bg-surface-container-high/20 shadow-lg relative overflow-hidden flex items-center justify-center" data-location="Bordj El Kiffan, Algiers, Algeria" style="">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<div class="relative z-10 bg-primary/95 text-on-primary p-6 text-center max-w-sm border border-tertiary-fixed/30 shadow-xl">
+<span class="material-symbols-outlined text-[36px] text-tertiary-fixed mb-2">precision_manufacturing</span>
+<h4 class="font-headline-sm text-headline-sm uppercase font-bold">Atelier Central PRETWEAR</h4>
+<p class="font-body-sm text-body-sm text-secondary-fixed mt-1">Confection, Broderie Numérique &amp; Presses DTF Réunies au même pôle industriel.</p>
+<div class="mt-4 pt-3 border-t border-surface-container-high/20 text-[11px] font-label-sm uppercase text-tertiary-fixed">
+                Accès direct Tramway station Bordj El Kiffan Centre
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comprehensive FAQ Section -->
+<section class="w-full px-margin-desktop py-space-xl bg-surface-container-low">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary font-bold">Foire Aux Questions</span>
+<h2 class="font-headline-lg text-headline-lg uppercase font-bold tracking-tight text-primary">
+          Questions Fréquentes sur la Personnalisation
+        </h2>
+</div>
+<div class="space-y-4">
+<!-- Q1 -->
+<details class="bg-surface-container-lowest p-6 shadow-sm group cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm uppercase font-bold text-primary list-none">
+<span>Quels types de fichiers devez-vous fournir pour une impression nette ?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pour une qualité irréprochable sans pixellisation, nous préconisons les fichiers vectoriels au format <strong>Adobe Illustrator (.AI), PDF vectoriel (.PDF)</strong> ou <strong>SVG</strong> avec polices vectorisées. Si vous disposez d'un fichier image (PNG ou TIFF), assurez-vous qu'il possède un fond transparent et une résolution minimale de <strong>300 DPI à taille réelle</strong> de marquage.
+          </div>
+</details>
+<!-- Q2 -->
+<details class="bg-surface-container-lowest p-6 shadow-sm group cursor-pointer" open="">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm uppercase font-bold text-primary list-none">
+<span>Quels sont les délais de confection et d'expédition ?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Après validation du Bon à Tirer (BAT) numérique et du versement d'acompte, le délai de fabrication standard en atelier est de <strong>4 à 7 jours ouvrés</strong> pour les séries de 10 à 200 pièces. L'expédition vers les 58 wilayas prend ensuite de 24h à 48h selon la destination via notre réseau logistique dédié.
+          </div>
+</details>
+<!-- Q3 -->
+<details class="bg-surface-container-lowest p-6 shadow-sm group cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm uppercase font-bold text-primary list-none">
+<span>Comment se déroule le paiement (Acompte &amp; Paiement à la livraison) ?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pour toute commande sur mesure personnalisée, un acompte initial de <strong>30% à 50%</strong> est demandé pour lancer la coupe et la personnalisation (règlement par BaridiMob, virement bancaire CCP/BNA ou en espèces au showroom d'Alger). Le solde restant est réglé directement en <strong>espèces à la livraison (COD)</strong> en main propre à la réception du colis dans votre wilaya.
+          </div>
+</details>
+<!-- Q4 -->
+<details class="bg-surface-container-lowest p-6 shadow-sm group cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm uppercase font-bold text-primary list-none">
+<span>Est-il possible de recevoir un échantillon physique avant la grande série ?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Oui ! Pour toute commande supérieure à 50 pièces, nous pouvons confectionner un exemplaire test (échantillon pré-série) et vous le transmettre par coursier ou photo/vidéo HD macro pour validation complète des couleurs, du relief de la broderie et des dimensions exactes avant d'engager la fabrication globale.
+          </div>
+</details>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions & form simulation logic
+  function toggleCompanyField(isCompany) {
+    const compBlock = document.getElementById('companyBlock');
+    if (compBlock) {
+      compBlock.style.display = isCompany ? 'flex' : 'none';
+    }
+  }
+
+  function handleFileSelect(input) {
+    const status = document.getElementById('fileUploadStatus');
+    if (input.files && input.files.length > 0) {
+      status.classList.remove('hidden');
+      status.innerText = `✓ ${input.files.length} fichier(s) sélectionné(s) : ${input.files[0].name}`;
+    }
+  }
+
+  function updateLiveEstimate() {
+    const qty = document.getElementById('quantityBracket').value;
+    const tech = document.getElementById('techniqueSelect').value;
+    const priceDisplay = document.getElementById('estimatedPrice');
+    
+    let baseMin = 1500;
+    let baseMax = 2200;
+
+    if (tech === 'embroidery') {
+      baseMin += 400;
+      baseMax += 600;
+    } else if (tech === 'silkscreen') {
+      baseMin -= 200;
+      baseMax -= 300;
+    } else if (tech === 'mixte') {
+      baseMin += 600;
+      baseMax += 900;
+    }
+
+    if (qty === '10-25') {
+      baseMin += 300;
+      baseMax += 400;
+    } else if (qty === '51-100') {
+      baseMin -= 200;
+      baseMax -= 300;
+    } else if (qty === '101-250' || qty === '251-500' || qty === '500+') {
+      baseMin -= 400;
+      baseMax -= 600;
+    }
+
+    if (priceDisplay) {
+      priceDisplay.innerText = `${baseMin.toLocaleString('fr-FR')} - ${baseMax.toLocaleString('fr-FR')} DZD`;
+    }
+  }
+
+  function handleCustomizationSubmit() {
+    const alertBox = document.getElementById('submitSuccessAlert');
+    if (alertBox) {
+      alertBox.classList.remove('hidden');
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+</script></main><footer class="w-full bg-primary text-on-primary"><div class="w-full px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop pb-space-xl border-b border-surface-container-high/15"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md uppercase tracking-tight text-on-primary font-bold">PRETWEAR</span><span class="px-2 py-0.5 bg-tertiary-container text-tertiary-fixed font-label-sm text-[10px] uppercase tracking-widest border border-tertiary-fixed/30">Haute Atelier</span></div><p class="font-body-md text-body-md text-secondary-fixed-dim max-w-sm">Wear it. Brand it. Make it yours. Contemporary street luxury meets avant-garde artisanal customization across all 58 Algerian wilayas.</p><div class="flex flex-col gap-1 text-body-sm font-body-sm text-secondary-fixed-dim"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">location_on</span>Bordj El Kiffan, Algiers, Algeria</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">schedule</span>Atelier: Samedi - Jeudi (09:00 - 19:00)</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">payments</span>Paiement à la livraison sécurisé (Main à main)</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-tertiary-fixed">Shop &amp; Collections</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">Toutes les créations</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="collections" href="#">Collection SS25</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">Hoodies &amp; Sweats Lourds</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">T-Shirts Oversize 280GSM</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="shop" href="#">Accessoires &amp; Casquettes</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-tertiary-fixed">Atelier &amp; Services</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="customization" href="#">Personnalisation DTF Ultra-HD</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="customization" href="#">Broderie Or &amp; Relief Puff</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="customization" href="#">Sérigraphie Artisanale</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="b2b-pro" href="#">Commandes en Gros / Grossistes</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-on-primary transition-colors" data-path="b2b-pro" href="#">Merchandising Entreprises</a></nav></div><div class="lg:col-span-4 flex flex-col gap-space-md"><span class="font-label-lg text-label-lg uppercase tracking-wider text-tertiary-fixed">Atelier Newsletter</span><p class="font-body-sm text-body-sm text-secondary-fixed-dim">Recevez les accès prioritaires aux drops limités et devis exclusifs pour vos séries de confection.</p><div class="flex w-full"><input class="w-full bg-surface-container-high/10 text-on-primary px-4 py-3 text-body-sm border border-outline font-body-md focus:border-tertiary-fixed focus:outline-none placeholder:text-outline" placeholder="Votre adresse email..." type="email"/><button class="bg-tertiary-fixed text-tertiary font-label-lg text-label-lg uppercase px-6 py-3 font-bold hover:bg-on-primary hover:text-primary transition-colors shrink-0" type="button">Rejoindre</button></div><div class="flex items-center gap-space-md pt-space-xs"><a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-tertiary-fixed transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-tertiary-fixed transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span>Instagram</a><a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed hover:text-tertiary-fixed transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">play_circle</span>TikTok @pretwear</a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-label-sm font-label-sm text-secondary-fixed-dim uppercase"><p>© 2025 PRETWEAR ALGIERS. CONÇU &amp; CONFECTIONNÉ EN ALGÉRIE. TOUS DROITS RÉSERVÉS.</p><div class="flex items-center gap-space-lg"><a class="hover:text-tertiary-fixed transition-colors" data-path="terms-cod" href="#">Conditions COD &amp; Wilayas</a><a class="hover:text-tertiary-fixed transition-colors" data-path="contact" href="#">Support Client</a><a class="hover:text-tertiary-fixed transition-colors" data-path="b2b-pro" href="#">Espace Revendeurs</a></div></div></div></footer></body></html>
