@@ -15,8 +15,11 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const clientUrl = process.env.CLIENT_URL ? process.env.CLIENT_URL.trim().replace(/\/$/, '') : null;
+
 const allowedOrigins = [
-  process.env.CLIENT_URL,
+  clientUrl,
+  clientUrl ? `https://${clientUrl.replace(/^https?:\/\//, '')}` : null,
   'http://localhost',
   'http://localhost:80',
   'http://localhost:5173',
@@ -33,7 +36,12 @@ app.set('trust proxy', 1);
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
+    if (
+      !origin ||
+      allowedOrigins.includes(origin) ||
+      process.env.NODE_ENV !== 'production' ||
+      (origin && origin.endsWith('.onrender.com'))
+    ) {
       return callback(null, true);
     }
     return callback(new Error(`Origin ${origin} not allowed by CORS`));
