@@ -1,11 +1,6 @@
-databases:
-  - name: pretwear-postgres
-    databaseName: pretwear
-    user: pretwear
-    plan: free
-
 services:
-  # Backend API Web Service
+  # Backend API Web Service (Node.js + Express + Prisma)
+  # Connected to your Supabase PostgreSQL database
   - type: web
     name: pretwear-backend
     runtime: node
@@ -18,9 +13,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        fromDatabase:
-          name: pretwear-postgres
-          property: connectionString
+        sync: false # Paste your Supabase PostgreSQL connection string in the Render Dashboard
       - key: CLIENT_URL
         fromService:
           type: web
@@ -47,7 +40,7 @@ services:
       - key: CLOUDINARY_API_SECRET
         sync: false
 
-  # Frontend Static Site
+  # Frontend Static Site (React + Vite + Tailwind)
   - type: web
     name: pretwear-frontend
     runtime: static
