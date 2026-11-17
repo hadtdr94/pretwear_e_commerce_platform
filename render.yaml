@@ -13,7 +13,9 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        sync: false # Paste your Supabase PostgreSQL connection string in the Render Dashboard
+        sync: false # Transaction pooler on port 6543 (or session pooler on 5432)
+      - key: DIRECT_URL
+        sync: false # Session pooler on port 5432 for migrations
       - key: CLIENT_URL
         fromService:
           type: web
